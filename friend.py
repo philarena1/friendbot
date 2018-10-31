@@ -52,7 +52,8 @@ def main():
     #get to know
         question = random.choice(get_to_know)
         time.sleep(random.randint(1,5))
-        response = input(question)
+        response = str(input(question))
 
-
+        react = response.replace('I','You')
+        print(react)
 main()
